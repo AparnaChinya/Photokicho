@@ -1,0 +1,34 @@
+<!-- Portfolio -->
+        <div class="portfolio-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 portfolio">
+	                	<br>&nbsp;</br>
+                        <br>&nbsp;</br>
+	                    <h2>Gallery</h2>
+	                    <p>
+	                    	Find the various occassions where Photobooth provided the entertainment!
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="container">
+		            <div class="row">
+		            	<div class="col-sm-12">
+		            		<div id="slides_control" ng-controller="galleryController">
+		            			<div>
+		            				<carousel interval="myInterval">
+		            					<slide ng-repeat="slide in slides" active="slide.active">
+		            						<img ng-src="{{slide.image}}">
+		            						<div class="carousel-caption carousel-text">
+		            							<h4>{{slide.text}}</h4>
+		            						</div>
+		            					</slide>
+		            				</carousel>
+		            			</div>
+		            		</div>
+		            	</div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+
